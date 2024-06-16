@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-color: #383838;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+#board {
+
+    background-color: #ffffff00;
+    margin: auto;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    border: 1px solid;
+    background-image: url(https://w0.peakpx.com/wallpaper/143/12/HD-wallpaper-classic-doom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#board>div {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snake{
+    background-color: rgb(46, 160, 84);
+    border-radius: 30%;
+}
+
+.apple::after {
+    content: "";
+    
+    height: 30px;
+    width: 30px;
+    background: url(https://static.doomworld.com/monthly_2017_10/cacodemon.png.bdf0c358827bf1b615ba517934cfe9cb.png);
+    background-size: 30px;
+
+}
+
+#score {
+    font-size: 24px;
+    color: white;
+}
+
+#newGame {
+    display: none;
+}
+.snake.head {
+    background-color: #000000;
+    border: 2px solid chartreuse;
+    box-sizing: border-box;
+}
+.topBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleImg{
+    height: 4cm;
+    width: 12cm;
+}
+
+
+
+@media (max-width: 768px) {
+    html {
+        min-height: 100%;
+    }
+    
+    body {
+        direction: rtl;
+        background-color: #383838;
+        padding-bottom: 15px;
+        text-align: center;
+        
+    }
+    
+    * {
+        font-family: 'Rubik', sans-serif !important;
+    }
+    
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 16px;
+    }
+    
+    #board {
+    
+        background-color: #ffffff00;
+        margin: auto;
+        border-radius: 6px;
+        text-align: center;
+        display: inline-grid;
+        color: white;
+        border: 1px solid;
+        background-image: url(https://w0.peakpx.com/wallpaper/143/12/HD-wallpaper-classic-doom.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    #board>div {
+        height: 15px;
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .snake{
+        background-color: rgb(46, 160, 84);
+        border-radius: 30%;
+    }
+    
+    .apple::after {
+        content: "";
+        
+        height: 15px;
+        width: 15px;
+        background: url(https://static.doomworld.com/monthly_2017_10/cacodemon.png.bdf0c358827bf1b615ba517934cfe9cb.png);
+        background-size: 15px;
+    
+    }
+    
+    #score {
+        font-size: 20px;
+        color: white;
+    }
+    
+    #newGame {
+        display: none;
+    }
+    .snake.head {
+        background-color: #000000;
+        border: 2px solid chartreuse;
+        box-sizing: border-box;
+    }
+    .topBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleImg{
+        height: 4cm;
+        width: 12cm;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        min-height: 100%;
+    }
+    
+    body {
+        direction: rtl;
+        background-color: #383838;
+        padding-bottom: 15px;
+        text-align: center;
+        
+    }
+    
+    * {
+        font-family: 'Rubik', sans-serif !important;
+    }
+    
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 16px;
+    }
+    
+    #board {
+    
+        background-color: #ffffff00;
+        margin: auto;
+        border-radius: 6px;
+        text-align: center;
+        display: inline-grid;
+        color: white;
+        border: 1px solid;
+        background-image: url(https://w0.peakpx.com/wallpaper/143/12/HD-wallpaper-classic-doom.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    #board>div {
+        height: 7px;
+        width: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .snake{
+        background-color: rgb(46, 160, 84);
+        border-radius: 30%;
+    }
+    
+    .apple::after {
+        content: "";
+        
+        height: 7px;
+        width: 7px;
+        background: url(https://static.doomworld.com/monthly_2017_10/cacodemon.png.bdf0c358827bf1b615ba517934cfe9cb.png);
+        background-size: 7px;
+    
+    }
+    
+    #score {
+        font-size: 10px;
+        color: white;
+    }
+    
+    #newGame {
+        display: none;
+    }
+    .snake.head {
+        background-color: #000000;
+        border: 2px solid chartreuse;
+        box-sizing: border-box;
+    }
+    .topBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleImg{
+        height: 2cm;
+        width: 6cm;
+    }
+}
