@@ -116,12 +116,15 @@ p {
 }
 
 .contact {
+    display: flex;
+    
     padding: 20px;
     text-align: center;
     background: transparent url('Rectangle\ 41@2x.png');
     background-color: rgb(5, 150, 150);
     height: 70vh;
-    display: flex;
+    background-size: cover;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
